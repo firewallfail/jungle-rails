@@ -1,8 +1,10 @@
 class OrdersController < ApplicationController
 
   def show
-    @line_item = Order.find(params[:id])
     @order = Order.find(params[:id])
+    @line_items = @order.line_items
+    @completed_order = @line_items.joins("INNER JOIN products on line_items.product_id = products.id")
+    .select('line_items.*, products.*')
   end
 
   def create

@@ -2,10 +2,14 @@
 
   <header class="page-header">
     <h1>Order #<%= @order.id %></h1>
-    <h1><%=@order.inspect%></h1>
-    <h1><%=@line_item.inspect%></h1>
+    <h1><%= pp @completed_order[0].inspect %></h1>
   </header>
 
+
+
+  <h1>Total: <%=humanized_money_with_symbol @order.total_cents / 100.0%></h1>
+  <h1>Email: <%=@order.email%></h1>
+    
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
   </div>
