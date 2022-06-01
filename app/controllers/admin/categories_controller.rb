@@ -11,9 +11,6 @@ class Admin::CategoriesController < ApplicationController
   end
 
   def create
-    puts
-    pp params[:category]
-    puts
     @category = Category.new(category_params)
 
     if @category.save
