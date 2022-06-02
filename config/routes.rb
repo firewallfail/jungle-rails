@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get "/about", to: "about#index"
+  get "/logout", to: "session#destroy"
 
   root to: 'products#index'
 
