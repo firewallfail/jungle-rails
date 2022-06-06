@@ -8,7 +8,12 @@ class User < ApplicationRecord
   validates :password_digest, presence: true
 
   def self.authenticate_with_credentials(email, password)
-    true
+    user = User.find_by_email(email)
+    pp user.inspect
+    if user && user.authenticate(password)
+      return user
+    end
+    return nil
   end
 
 end

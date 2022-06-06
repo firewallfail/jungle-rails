@@ -26,7 +26,9 @@ RSpec.describe User, type: :model do
   end
 
   describe '.authenticate_with_credentials' do
-
+    @user = User.create(first_name: "Brent", last_name: "Hall", email: "test@test.com", password_digest: "password")
+    result = User.authenticate_with_credentials("test@test.com", "password")
+    expect(result.email).to be("test@test.com")
   end
 
 end
