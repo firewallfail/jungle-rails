@@ -2,7 +2,7 @@
 
 A mini e-commerce application built with Rails 6.1.
 ![Home Page](https://github.com/firewallfail/jungle-rails/blob/master/docs/home_page.PNG?raw=true "Home Page")
-![Logged in](https://github.com/firewallfail/jungle-rails/blob/master/docs/logged_in.PNG?raw=true "Logged in")
+![Logged In](https://github.com/firewallfail/jungle-rails/blob/master/docs/logged_in.PNG?raw=true "Logged In")
 ![Mobile View](https://github.com/firewallfail/jungle-rails/blob/master/docs/mobile.PNG?raw=true "Mobile View")
 
 ## Setup
